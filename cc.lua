@@ -300,6 +300,7 @@ end
 
 while true do
     if autosellbutton.BackgroundColor3 == Color3.fromRGB(0, 255, 0) then 
+	function getNil(name,class) for _,v in pairs(getnilinstances())do if v.ClassName==class and v.Name==name then return v;end end end
         local args1 = {
             [1] = getNil("Value", "LocalScript"),
             [2] = math.random(5000, 9999999),
