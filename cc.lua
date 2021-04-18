@@ -12,7 +12,7 @@ local Divider = Instance.new("Frame")
 local DropDown1 = Instance.new("Frame")
 local CaseTypes = Instance.new("Frame")
 local Legendary = Instance.new("TextButton")
-local Luck = Instance.new("TextButton")
+local Valk = Instance.new("TextButton")
 local OceanCase = Instance.new("TextButton")
 local Selection = Instance.new("TextButton")
 local CaseAmtInput = Instance.new("TextBox")
@@ -139,16 +139,16 @@ Legendary.Text = "Legendary"
 Legendary.TextColor3 = Color3.fromRGB(0, 0, 0)
 Legendary.TextSize = 14.000
 
-Luck.Name = "Luck"
-Luck.Parent = CaseTypes
-Luck.BackgroundColor3 = Color3.fromRGB(101, 101, 111)
-Luck.BorderColor3 = Color3.fromRGB(137, 53, 170)
-Luck.Position = UDim2.new(0, 0, 0.159999996, 0)
-Luck.Size = UDim2.new(0, 100, 0, 16)
-Luck.Font = Enum.Font.Cartoon
-Luck.Text = "Luck"
-VaLucklk.TextColor3 = Color3.fromRGB(0, 0, 0)
-Luck.TextSize = 14.000
+Valk.Name = "Luck"
+Valk.Parent = CaseTypes
+Valk.BackgroundColor3 = Color3.fromRGB(101, 101, 111)
+Valk.BorderColor3 = Color3.fromRGB(137, 53, 170)
+Valk.Position = UDim2.new(0, 0, 0.159999996, 0)
+Valk.Size = UDim2.new(0, 100, 0, 16)
+Valk.Font = Enum.Font.Cartoon
+Valk.Text = "Luck"
+Valk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Valk.TextSize = 14.000
 
 OceanCase.Name = "OceanCase"
 OceanCase.Parent = CaseTypes
@@ -264,7 +264,7 @@ menu.OceanCase.MouseButton1Click:Connect(function()
 	print('Your selected '.._G.crate)
 end)
 
-menu.Luck.MouseButton1Click:Connect(function()
+menu.Valk.MouseButton1Click:Connect(function()
 	_G.crate = "Luck"
 	print('Your selected '.._G.crate)
 end)
@@ -300,7 +300,6 @@ end
 
 while true do
     if autosellbutton.BackgroundColor3 == Color3.fromRGB(0, 255, 0) then 
-	function getNil(name,class) for _,v in pairs(getnilinstances())do if v.ClassName==class and v.Name==name then return v;end end end
         local args1 = {
             [1] = getNil("Value", "LocalScript"),
             [2] = math.random(5000, 9999999),
@@ -310,5 +309,3 @@ while true do
     end
     wait(1)
 end
-
-game.Workspace.DailyDealsUntouched:Remove()
